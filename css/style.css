@@ -70,6 +70,12 @@ strong{display: block;}
   width: 190px;
 margin-top: 8px;
 }
+.logo img{
+  width: 142px;
+}
+.icon_menu{
+  width: 20px;
+}
 .search_box{
   width: 55.5%;
 }
