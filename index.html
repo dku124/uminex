@@ -86,28 +86,97 @@
 
         <!-- menu mobile -->
         <span class="menu_btn mo"><img src="imgs/icons/icon_menu.png" alt="menu"></span>
-        <div class="menu_moblie mo">
-          <ul class="top_select flex">
-            <li class="select_item flex">English <span class="icon"><img src="imgs/icons/icon_arr-down.png" alt="icon"></span></li>
-            <li class="select_item flex">USD <span class="icon"><img src="imgs/icons/icon_arr-down.png" alt="icon"></span></li>
-          </ul>
+        <div class="menu_moblie">
+          <div class="menu_user justify-between">
+            <ul class="info_list flex">
+              <li class="info_item">
+                <a href="#" class="flex">
+                  <img src="imgs/icons/icon_acc.png" alt="user name">
+                </a>
+              </li>
+              <li class="info_item">
+                <a href="#">
+                  <div class="relative">
+                    <img src="imgs/icons/icon_whislist.png" alt="whislist">
+                    <span class="quanlity bg-red">2</span>
+                  </div>
+                </a>
+              </li>
+              <li class="info_item">
+                <a href="#" class="flex">
+                  <div class="relative">
+                    <img src="imgs/icons/icon_cart.png" alt="cart">
+                    <span class="quanlity bg-red">2</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="top_select flex">
+              <li class="select_item flex">EN</li>
+              <li class="select_item flex">USD</li>
+            </ul>
+          </div>
+          
           <div class="menu_search justify-between">
             <input type="text" placeholder="Search...">
             <button type="button"><img src="imgs/icons/icon-search.png" alt="search"></button>
           </div>
+
+          <ul class="nav_list column">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                Home
+                <img src="imgs/icons/icon_arr-down.png" alt="">
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                Shop
+                <img src="imgs/icons/icon_arr-down.png" alt="">
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                Product
+                <img src="imgs/icons/icon_arr-down.png" alt="">
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                Page
+                <img src="imgs/icons/icon_arr-down.png" alt="">
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                Blog
+                <img src="imgs/icons/icon_arr-down.png" alt="">
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Contact Us</a>
+            </li>
+            <li class="nav_item red">
+              <a href="#" class="nav_link txt-red">Buy Uminex!</a>
+            </li>
+          </ul>
+          
+          <span class="close_btn">
+            <img src="imgs/icons/icon-close.png" alt="close menu">
+          </span>
         </div>
         <div class="overlay"></div>
         <!-- //menu mobile -->
       </div>
     </div>
-    <div class="header_bottom border-b pc">
+    <div class="header_bottom border-b">
       <div class="container flex justify-between">
         <div class="bottom_nav flex">
           <div class="browser_categories flex">
             <img src="imgs/icons/icon_menu.png" alt="browser all categories">
             Browser All Categories
           </div>
-          <nav class="nav">
+          <nav class="nav pc">
             <ul class="nav_list flex">
               <li class="nav_item">
                 <a href="#" class="nav_link">
@@ -226,7 +295,7 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
           </div>
-          <ul class="banner_list flex">
+          <ul class="banner_list">
             <li class="banner_item">
               <a href="#" class="banner_link">
                 <div class="banner_img">
@@ -314,35 +383,37 @@
           <li class="prodcut_item item_main">
             <a href="#" class="product_link">
               <h4 class="product_label border-b">Today’s Offer</h4>
-              <div class="product_img">
-                <img src="imgs/p1.png" alt="Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked">
-                <span class="product_discount">-20%</span>
-                <span class="product_gift">
-                  <img src="imgs/icons/icon_gift.png" alt="gift">
-                </span>
-              </div>
-              <div class="product_info">
-                <strong class="product_title">Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked</strong>
-                <span class="product_rate">
-                  <span class="rate_star"><img src="imgs/icons/icon_star.png" alt="rate"></span>
-                  <span class="rate_number">(29 reviews)</span>
-                </span>
-                <p class="product_price">
-                  <span class="price_new">$128.00</span>
-                  <span class="price_old">$12.00</span>
-                </p>
-                <div class="product_timer">
-                  <p class="timer_label">Hurry up! Offer ends in:</p>
-                  <div class="timer flex" id="timer">
-                    <span id="days"></span>:
-                    <span id="hours"></span>:
-                    <span id="minutes"></span>:
-                    <span id="seconds"></span>
+              <div class="product_detail">
+                <div class="product_img">
+                  <img src="imgs/p1.png" alt="Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked">
+                  <span class="product_discount">-20%</span>
+                  <span class="product_gift">
+                    <img src="imgs/icons/icon_gift.png" alt="gift">
+                  </span>
+                </div>
+                <div class="product_info">
+                  <strong class="product_title">Apple iPhone 13 Pro Max 128GB Gold Fully Unlocked</strong>
+                  <span class="product_rate">
+                    <span class="rate_star"><img src="imgs/icons/icon_star.png" alt="rate"></span>
+                    <span class="rate_number">(29 reviews)</span>
+                  </span>
+                  <p class="product_price">
+                    <span class="price_new">$128.00</span>
+                    <span class="price_old">$12.00</span>
+                  </p>
+                  <div class="product_timer">
+                    <p class="timer_label">Hurry up! Offer ends in:</p>
+                    <div class="timer flex" id="timer">
+                      <span id="days"></span>:
+                      <span id="hours"></span>:
+                      <span id="minutes"></span>:
+                      <span id="seconds"></span>
+                    </div>
+                    <div class="timer_process">
+                      <span class="timer_remaining"></span>
+                    </div>
+                    <p class="product_sold">Sold: <span class="txt-bold">620/896</span> products </p>
                   </div>
-                  <div class="timer_process">
-                    <span class="timer_remaining"></span>
-                  </div>
-                  <p class="product_sold">Sold: <span class="txt-bold">620/896</span> products </p>
                 </div>
               </div>
               
@@ -520,7 +591,7 @@
           <li class="footer_item">
             <p class="txt-uppercase">Sign up to Newsletter</p>
             <p class="footer_txt">Join 20.000+ subscribers and get a new discount coupon on every Saturday. Updates information on Sales and Offers.</p>
-            <form class="form justify-between">
+            <form class="form flex">
               <input type="text" placeholder="Your email address">
               <button type="submit">SUBCRIBE</button>
             </form>
@@ -550,6 +621,7 @@
 
   <!-- js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

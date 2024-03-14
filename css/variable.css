@@ -80,5 +80,6 @@
 @media screen and (max-width:1442px) {
   .container{
     width: 100%;
+    padding-inline: 10px;
   }
 }

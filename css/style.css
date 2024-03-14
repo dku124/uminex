@@ -165,19 +165,52 @@ margin-top: 8px;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 270px;
+  width: 300px;
   z-index: 100;
   background-color: #fff;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
+  transition: .4s;
+  /* display: none; */
+  transform: translateX(300px);
+}
+.menu_moblie.active{
+  transform: translateX(0);
 }
 .menu_moblie .top_select{
   padding-left: 0;
+  column-gap: 6px;
+}
+.menu_moblie .top_select li{
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 12px;
 }
 .menu_search{
   margin-top: 1rem;
   padding: 4px 10px;
   border: 1px solid var(--border-color);
   border-radius: 20px;
+}
+.menu_moblie .info_item img{
+  height: 20px;
+}
+.menu_moblie .nav_list{
+  margin-top: 1rem;
+  border-left: 0;
+  padding-inline: 0;
+}
+.menu_moblie .nav_link{
+  padding-block: 1rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+}
+.close_btn{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 120;
+  cursor: pointer;
 }
 .overlay{
   position: fixed;
@@ -187,6 +220,14 @@ margin-top: 8px;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 70;
+  display: none;
+  transition: .4;
+  animation: background-color .4s forwards
+}
+.lock-sceen{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 /* main */
 .main{
@@ -219,6 +260,7 @@ margin-top: 8px;
   row-gap: 1px;
 }
 .banner_list{
+  display: flex;
   justify-content: space-between;
   column-gap: 5px;
 }
@@ -235,7 +277,7 @@ margin-top: 8px;
 /* slider */
 .swiper {
   width: 1120px;
-  height: 300px;
+  /* height: 300px; */
   flex: 1;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
@@ -274,6 +316,8 @@ margin-top: 8px;
 .slider_content{
   left: 160px;
 }
+.swiper-slide a{height: 100%;}
+.slider_img{height: 100%;}
 .slider_subtit{
   color: #FDE50B;
 font-size: 12px;
@@ -301,7 +345,9 @@ margin-top: 32px;
 }
 .slider_img img{
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 /* end slide */
@@ -468,10 +514,11 @@ margin-top: 32px;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  padding-block: 56px;
+  padding-block: 40px 56px;
 }
 .footer_item{
   max-width: 450px;
+  margin-top: 16px;
 }
 .footer_txt{
   color: #515D66;
@@ -538,5 +585,102 @@ letter-spacing: -.5px;
   }
   .mo{
     display: block;
+  }
+  .browser_categories{
+    padding-left: 0;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width:992px){
+  .products{
+    grid-template-columns: repeat(4, calc((100% - 24px) / 4));
+  }
+  .footer_content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_item{
+    max-width: 100%;
+    text-align: center;
+  }
+  .form{
+    justify-content: center;
+  }
+  .footer_bottom .container{
+    flex-direction: column;
+    text-align: center;
+  }
+  .social .footer_txt{
+    display: none;
+  }
+  .social_list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width:768px){
+  .header_noti{
+    flex-direction: column;
+    align-items: start;
+  }
+  .banner{
+    row-gap: 5px;
+  }
+  .slider_img {
+    height: 280px;
+  }
+  .products{
+    grid-template-columns: repeat(2, calc((100% - 8px) / 2));
+  }
+  .item_main {
+    grid-column: 1/ span 2;
+    grid-row: 1;
+  }
+  .product_detail{
+    display: flex;
+    column-gap: .5rem;
+  }
+  .product_detail .product_img{
+    flex: 1;
+  }
+  .product_detail .product_info{
+    flex: 1;
+  }
+  .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+  .slider_content{
+    left: 2rem;
+  }
+  .slider_title {
+    font-size: 30px;
+    margin-top: 8px;
+  }
+  .slider_btn {
+    font-size: 12px;
+    padding: 10px 40px;
+    margin-top: 14px;
+  }
+  .banner_list{
+    flex-direction: column;
+  }
+  .banner_img img{
+    height: 80px;
+  }
+  .banner_content{
+    left: 2rem;
+    
+  }
+  .banner_subtit{
+    margin-top: 0;
+  }
+  .banner_title br{
+    display: none;
+  }
+}
+@media screen and (max-width:576px){
+  .product_detail{
+    flex-direction: column;
   }
 }

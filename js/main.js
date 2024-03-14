@@ -5,6 +5,10 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 // countdown timer
@@ -36,3 +40,23 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+// menu mobile
+$(document).ready(function(){
+  $(".menu_btn").click(function(){
+    $(".menu_moblie").addClass('active');
+    $(".overlay").show();
+    $('body').addClass('lock-sceen')
+  });
+  $(".overlay").click(function(){
+    $(".menu_moblie").removeClass('active');
+    $(".overlay").hide();
+    $('body').removeClass('lock-sceen')
+  });
+  $(".close_btn").click(function(){
+    $(".menu_moblie").removeClass('active');
+    $(".overlay").hide();
+    $('body').removeClass('lock-sceen')
+  });
+  
+});
