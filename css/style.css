@@ -192,6 +192,9 @@ margin-top: 8px;
   border: 1px solid var(--border-color);
   border-radius: 20px;
 }
+.menu_search input{
+  font-size: 14px;
+}
 .menu_moblie .info_item img{
   height: 20px;
 }
@@ -335,13 +338,14 @@ margin-top: 20px;
   color: #17F084;
 }
 .slider_btn{
-  font-size: 12px;
+  font-size: 13px;
 font-weight: 700;
 text-transform: uppercase;
 padding: 15px 44px;
 border-radius: 30px;
 background-color: #fff;
 margin-top: 32px;
+display: inline-block;
 }
 .slider_img img{
   width: 100%;
