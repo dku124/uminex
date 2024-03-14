@@ -42,24 +42,6 @@ var x = setInterval(function() {
 }, 1000);
 
 // menu mobile
-// $(document).ready(function(){
-//   $(".menu_btn").click(function(){
-//     $(".menu_moblie").addClass('active');
-//     $(".overlay").show();
-//     $('body').addClass('lock-sceen')
-//   });
-//   $(".overlay").click(function(){
-//     $(".menu_moblie").removeClass('active');
-//     $(".overlay").hide();
-//     $('body').removeClass('lock-sceen')
-//   });
-//   $(".close_btn").click(function(){
-//     $(".menu_moblie").removeClass('active');
-//     $(".overlay").hide();
-//     $('body').removeClass('lock-sceen')
-//   });
-  
-// });
 
 document.querySelector(".menu_btn").addEventListener("click", function(){
     
