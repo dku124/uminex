@@ -330,6 +330,7 @@ margin-top: 8px;
   font-weight: 600;
   line-height: 40px;
   margin-top: 20px;
+  letter-spacing: -0.95px;
 }
 .slider_title span{
   color: #17F084;
@@ -342,6 +343,7 @@ margin-top: 8px;
   border-radius: 30px;
   background-color: #fff;
   margin-top: 32px;
+  letter-spacing: -0.6px;
   display: inline-block;
 }
 .slider_img img{
@@ -392,6 +394,7 @@ margin-top: 8px;
 }
 .product_title{
   margin-top: 15px;
+  letter-spacing: -0.13px;
 }
 .product_discount{
   position: absolute;
@@ -525,7 +528,7 @@ margin-block: 4px 18px;
 letter-spacing: -.5px;
 }
 .form{
-  margin-top: 20px;
+  margin-top: 22px;
 }
 .form input{
   width: 300px;
@@ -541,6 +544,7 @@ letter-spacing: -.5px;
   color: #fff;
   background-color: #2B38D1;
   border-radius: 30px;
+  margin-left: 10px;
 }
 .footer_bottom .container{
   padding-block: 35px;
